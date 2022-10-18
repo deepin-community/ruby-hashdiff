@@ -1,0 +1,46 @@
+ruby-hashdiff (1.0.1-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Cédric Boutillier ]
+  * New upstream version 1.0.1
+  * watch file to v4
+  * gem install layout
+  * gitattributes
+  * d/control:
+    + Rules-Requires-Root set to no
+    + Standards version bumped to 4.5.1 (no changes needed)
+    + no explicit dependency on ruby interpreter
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 21 Dec 2020 15:20:56 +0100
+
+ruby-hashdiff (1.0.0-1) unstable; urgency=medium
+
+  [ Antonio Terceiro ]
+  * Remove myself from Uploaders:
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Cédric Boutillier ]
+  * New upstream version 1.0.0
+  * Add myself as an uploader
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Move debian/watch to gemwatch.debian.net
+  * Use salsa.debian.org in Vcs-* fields
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Add upstream/metadata
+  * Drop patches, solved upstream
+  * Breaks older ruby-webmock
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 16 Sep 2019 23:18:47 +0200
+
+ruby-hashdiff (0.2.3-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Antonio Terceiro <terceiro@debian.org>  Fri, 22 Jan 2016 12:12:33 -0200

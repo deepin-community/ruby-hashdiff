@@ -1,0 +1,27 @@
+Source: ruby-hashdiff
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Boutillier <boutil@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1),
+               rake,
+               ruby-rspec
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-hashdiff.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-hashdiff
+Homepage: https://github.com/liufengyun/hashdiff
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-hashdiff
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Breaks: ruby-webmock (<< 3.6~)
+Description: library for computing the smallest difference between two hashes
+ Given two Hashes A and B, HashDiff will calculate the smallest modification
+ that can be made to change A into B.
